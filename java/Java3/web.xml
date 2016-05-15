@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <context-param>
+    <param-name>universal_parm</param-name>
+    <param-value>Unicorn</param-value>
+  </context-param>
+  <servlet>
+    <servlet-name>ServletX</servlet-name>
+    <servlet-class>edu.acc.java.ServletX</servlet-class>
+    <init-param>
+      <param-name>my_parm</param-name>
+      <param-value>Dog</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletX</servlet-name>
+    <url-pattern>/ServletX</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ServletY</servlet-name>
+    <servlet-class>edu.acc.java.ServletY</servlet-class>
+    <init-param>
+      <param-name>my_parm</param-name>
+      <param-value>Cat</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletY</servlet-name>
+    <url-pattern>/ServletY</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

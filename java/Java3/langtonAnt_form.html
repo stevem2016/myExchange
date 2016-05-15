@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+#table {
+	display: table;
+}
+
+.row {
+	display: table-row;
+}
+
+.cell {
+	display: table-cell;
+	padding: 4px;
+}
+</style>
+</head>
+<body>
+	<form action="LangtonAntServlet" method="POST">
+		<div id="table">
+			<div class="row">
+				<span class="cell"> Lattice size</span> <span class="cell"><input
+					type="text" name="latticeSize" value="80"> </span>
+			</div>
+			<div class="row">
+				<span class="cell"> View Stops</span> <span class="cell"> <input
+					type="text" name="viewStops" value="18,180,18000">
+				</span>
+			</div>
+			<div class="row">
+				<span class="cell"> Start Row, Col</span> <span class="cell">
+					<input type="text" name="startRowCol" value="30,30">
+				</span>
+			</div>
+		</div>
+	<input type="submit">
+	</form>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Lotto Parameters</title>
+</head>
+<body>
+<div style="width:250px"><h3>Lotto Parameters</h3>
+<form action="LottoServletC" method="POST">
+  <label for="nb">How many balls? </label><input id="nb" type="text" name="num_lotto_balls" value="">
+  <br><br><label for="max">Max ball number?</label> <input id="max" type="text" name="max_ball_number" value="">
+  <br><br><label for="yr">Number of years? </label>  <input id="yr" type="text" name="years" value="">
+
+  <br><br><label for="replay">Replay?</label> 
+    <span id="replay">
+    <input type="radio" name="replay" value="yes">Yes
+    <input type="radio" name="replay" checked value="no">No
+    </span>
+
+  <br><br><input type="submit" value="Run Simulation">
+</form>
+</div>
+</body>
+</html>
